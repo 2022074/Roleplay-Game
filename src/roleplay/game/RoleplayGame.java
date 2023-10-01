@@ -18,10 +18,11 @@ public class RoleplayGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        try{
+        
             int i = 0;
             
             do{
+                try{
                 System.out.println("After a long fight in the tunnels under the city against the traitors of the Imperium, the guards have come to a 3-way division in the tunnel." +
                                    "Choose which tunnel the guards will take in order to find the remaining traitor troops and stop their plan:");
                 System.out.println( "1. Left Tunnel"   +
@@ -39,12 +40,23 @@ public class RoleplayGame {
                         break;
                     
                     case 2:
-            }
-            }while(i == 1);
-            
-    }catch(Exception e){
+                        System.out.println("The guards go through the Center Tunnel..." + 
+                                           "Not even 5 minutes later the guards get ambushed from both sides by the traitors." + 
+                                           "While their losses are massive, the guards are able to push through and arrive to the place where the bomb is located." +
+                                           "The guards are able to deactivate the bomb in time and save the city even while under heavy fire from the remaining traitors..." + 
+                                           "GOOD ENDING");
+                        i++;
+                        break;
+                        
+                    
+                }
+                
+                }catch(Exception e){
             System.out.println("Sorry, that was not an available choice, try again!");
     }
+            }while(i == 1);
+            
+    
         
         
 }
