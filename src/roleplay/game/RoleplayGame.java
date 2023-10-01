@@ -16,13 +16,15 @@ public class RoleplayGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        
         
         
             int i = 0;
             
             do{
                 try{
+                    
+                Scanner sc = new Scanner(System.in);
                 System.out.println("After a long fight in the tunnels under the city against the traitors of the Imperium, \n"  + 
                                    "the guards have come to a 3-way division in the tunnel. \n" +
                                    "Choose which tunnel the guards will take in order to find the remaining traitor troops and stop their plan:");
