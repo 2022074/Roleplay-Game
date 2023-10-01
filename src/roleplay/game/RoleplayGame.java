@@ -37,7 +37,7 @@ public class RoleplayGame {
                                            "They failed to find the traitors in time, the city is gone and the tunnel is collapsing..." + 
                                            "BAD ENDING");
                         i++;
-                        break;
+                        //break;
                     
                     case 2:
                         System.out.println("The guards go through the Center Tunnel..." + 
@@ -46,17 +46,29 @@ public class RoleplayGame {
                                            "The guards are able to deactivate the bomb in time and save the city even while under heavy fire from the remaining traitors..." + 
                                            "GOOD ENDING");
                         i++;
-                        break;
+                        //break;
                         
-                    
+                    case 3:
+                        System.out.println("The guards go through the Right Tunnel..." + 
+                                           "The tunnel twists and weaves in different directions, after what felt like hours the guards start hearing distant talking." + 
+                                           "Sneaking becomes the best choice to avoid the traitor forces from discovering the guards, 3 lone specialist go forth to scout ahead."+ 
+                                           "One of them finds the bomb in the center of the chamber the traitors have choosen as their last stand, they procede to make their way to the device."+
+                                           "The device is carefully and quietly deactivaded without the traitors noticing, and the specialist plant explosives to get rid of the unaware tratiros." + 
+                                           "The explosives go off, annihilating the traitor forces and getting rid of the bomb as well without suffering any casualties..." + 
+                                           "PERFECT ENDING");
+                        i++;
+                        //break;
+                        
+                    default:
+                        System.out.println("Sorry, that was not an available choice, try again!");
                 }
                 
                 }catch(Exception e){
-            System.out.println("Sorry, that was not an available choice, try again!");
+            System.out.println("Sorry, only numbers are an accepted answer, try again!");
     }
             }while(i == 1);
             
-    
+        System.out.println("Thanks for playing!");
         
         
 }
